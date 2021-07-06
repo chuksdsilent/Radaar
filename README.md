@@ -9,8 +9,8 @@ Features
 
  ## How to Install
 
- -- Clone the repo
- -- update the env file
- -- run composer install
- -- run php artisan serve
- -- run npm run watch
+ -- Clone the repo <br />
+ -- update the env file <br />
+ -- run composer install <br />
+ -- run php artisan serve <br />
+ -- run npm run watch <br />
