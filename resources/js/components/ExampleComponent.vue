@@ -16,11 +16,7 @@
 
 <script>
     export default {
-       data(){
-           return{
-               people:[]
-           }
-       }
+     
       
     }
 </script>

@@ -8,19 +8,19 @@
                 <div class="card-body">
                     <table class="table">
                         <thead>
-                            <th>Name</th>
-                            <th>Birth Year</th>
-                            <th>Hair Color</th>
-                            <th>Skin Color</th>
-                            <th>Mass</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
                         </thead>
                         <tbody>
-                            <tr v-for="person in people">
-                                <td>{{person.name}}</td>
-                                <td>{{person.birth_year}}</td>
-                                <td>{{person.hair_color}}</td>
-                                <td>{{person.skin_color}}</td>
-                                <td>{{person.mass}}</td>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                             </tr>
                         </tbody>
                     </table>
@@ -46,8 +46,8 @@
                 fetch('https://swapi.dev/api/people')
                 .then(res => res.json())
                 .then(res =>{
-                    this.people = res.results;
-                    console.log(res.results);
+                    this.people = res.response;
+                    console.log(res.response);
                 })
             }
         }

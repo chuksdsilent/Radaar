@@ -1861,13 +1861,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  data: function data() {
-    return {
-      people: []
-    };
-  }
-});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});
 
 /***/ }),
 
@@ -1898,6 +1892,23 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -1909,10 +1920,13 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     fetchPeople: function fetchPeople() {
+      var _this = this;
+
       fetch('https://swapi.dev/api/people').then(function (res) {
         return res.json();
       }).then(function (res) {
-        console.log(res);
+        _this.people = res.results;
+        console.log(res.results);
       });
     }
   }
@@ -37593,23 +37607,55 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "container" }, [
+    _c("div", { staticClass: " justify-content-center" }, [
+      _c("div", { staticClass: "col-md-12" }, [
+        _c("div", { staticClass: "card" }, [
+          _c("div", { staticClass: "card-header" }, [_vm._v("People")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "card-body" }, [
+            _c("table", { staticClass: "table" }, [
+              _vm._m(0),
+              _vm._v(" "),
+              _c(
+                "tbody",
+                _vm._l(_vm.people, function(person) {
+                  return _c("tr", [
+                    _c("td", [_vm._v(_vm._s(person.name))]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v(_vm._s(person.birth_year))]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v(_vm._s(person.hair_color))]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v(_vm._s(person.skin_color))]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v(_vm._s(person.mass))])
+                  ])
+                }),
+                0
+              )
+            ])
+          ])
+        ])
+      ])
+    ])
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: " justify-content-center" }, [
-        _c("div", { staticClass: "col-md-12" }, [
-          _c("div", { staticClass: "card" }, [
-            _c("div", { staticClass: "card-header" }, [_vm._v("People")]),
-            _vm._v(" "),
-            _c("div", { staticClass: "card-body" })
-          ])
-        ])
-      ])
+    return _c("thead", [
+      _c("th", [_vm._v("Name")]),
+      _vm._v(" "),
+      _c("th", [_vm._v("Birth Year")]),
+      _vm._v(" "),
+      _c("th", [_vm._v("Hair Color")]),
+      _vm._v(" "),
+      _c("th", [_vm._v("Skin Color")]),
+      _vm._v(" "),
+      _c("th", [_vm._v("Mass")])
     ])
   }
 ]
