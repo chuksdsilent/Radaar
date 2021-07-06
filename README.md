@@ -10,7 +10,10 @@ Features
  ## How to Install
 
  -- Clone the repo <br />
+ -- create a database <br />
  -- update the env file <br />
- -- run composer install <br />
- -- run php artisan serve <br />
- -- run npm run watch <br />
+ run <br />
+    - php artisan migrate
+    - composer install <br />
+    - php artisan serve <br />
+    - npm run watch <br />
