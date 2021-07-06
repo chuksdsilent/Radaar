@@ -1,5 +1,5 @@
 <template>
-<div class="container">
+<div class="container mb-4">
     <div class=" justify-content-center">
         <div class="col-md-12">
             <div class="card">
@@ -47,7 +47,7 @@
                 .then(res => res.json())
                 .then(res =>{
                     this.people = res.results;
-                    console.log(res.results);
+                    
                 })
             }
         }
