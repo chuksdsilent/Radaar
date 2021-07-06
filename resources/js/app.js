@@ -22,6 +22,10 @@ window.Vue = require('vue').default;
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('people-component', require('./components/PeopleComponent.vue').default);
 Vue.component('film-component', require('./components/FilmsComponent.vue').default);
+Vue.component('planet-component', require('./components/PlanetsComponent.vue').default);
+Vue.component('starship-component', require('./components/StarshipsComponent.vue').default);
+Vue.component('vehicle-component', require('./components/VehiclesComponent.vue').default);
+Vue.component('specie-component', require('./components/SpeciesComponent.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

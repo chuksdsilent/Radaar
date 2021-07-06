@@ -47,7 +47,6 @@
                 .then(res => res.json())
                 .then(res =>{
                     this.films = res.results;
-                    console.log(res.results);
                 })
             }
         }
