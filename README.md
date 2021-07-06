@@ -13,7 +13,7 @@ Features
  -- create a database <br />
  -- update the env file <br />
  run <br />
-    - php artisan migrate
+    - php artisan migrate <br />
     - composer install <br />
     - php artisan serve <br />
     - npm run watch <br />
